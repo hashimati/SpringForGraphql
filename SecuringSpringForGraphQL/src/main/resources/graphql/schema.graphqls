@@ -1,0 +1,17 @@
+type Query{
+    findAll:[Fruit],
+    findById(id:ID):Fruit
+}
+type Mutation
+{
+    save(fruit:FruitInput):Fruit
+}
+input FruitInput{
+    name:String,
+    letter: String
+}
+type Fruit{
+    id:ID!,
+    name:String,
+    letter: String
+}
